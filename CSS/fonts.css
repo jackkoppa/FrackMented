@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*Header Font, "Capture", w/ solid background & white character version set as "bold"*/
+	@font-face {
+	    font-family: 'Capture';
+	    src: url('fonts/captureit_regular_macroman/Capture_it-webfont.eot');
+	    src: url('fonts/captureit_regular_macroman/Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/captureit_regular_macroman/Capture_it-webfont.woff') format('woff'),
+	         url('fonts/captureit_regular_macroman/Capture_it-webfont.ttf') format('truetype'),
+	         url('fonts/captureit_regular_macroman/Capture_it-webfont.svg#capture_itregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	@font-face {
+	    font-family: 'Capture';
+	    src: url('fonts/captureit2_regular_macroman/Capture_it_2-webfont.eot');
+	    src: url('fonts/captureit2_regular_macroman/Capture_it_2-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/captureit2_regular_macroman/Capture_it_2-webfont.woff') format('woff'),
+	         url('fonts/captureit2_regular_macroman/Capture_it_2-webfont.ttf') format('truetype'),
+	         url('fonts/captureit2_regular_macroman/Capture_it_2-webfont.svg#capture_it_2regular') format('svg');
+	    font-weight: bold;
+	    font-style: normal;
+
+	}
+
+/*Paragraph/normal text font, "LuxiMono", w/ 4 styles*/
+	@font-face {
+    font-family: 'LuxiMono';
+    src: url('fonts/luximono_regular_macroman/luximr-webfont.eot');
+    src: url('fonts/luximono_regular_macroman/luximr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/luximono_regular_macroman/luximr-webfont.woff') format('woff'),
+         url('fonts/luximono_regular_macroman/luximr-webfont.ttf') format('truetype'),
+         url('fonts/luximono_regular_macroman/luximr-webfont.svg#luxi_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+	}
+/*
+	@font-face {
+    font-family: 'LuxiMono';
+    src: url('fonts/luximono_bold_macroman/luximb-webfont.eot');
+    src: url('fonts/luximono_bold_macroman/luximb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/luximono_bold_macroman/luximb-webfont.woff') format('woff'),
+         url('fonts/luximono_bold_macroman/luximb-webfont.ttf') format('truetype'),
+         url('fonts/luximono_bold_macroman/luximb-webfont.svg#luxi_monobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+	}
+
+	@font-face {
+    font-family: 'LuxiMono';
+    src: url('fonts/luximono_oblique_macroman/luximri-webfont.eot');
+    src: url('fonts/luximono_oblique_macroman/luximri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/luximono_oblique_macroman/luximri-webfont.woff') format('woff'),
+         url('fonts/luximono_oblique_macroman/luximri-webfont.ttf') format('truetype'),
+         url('fonts/luximono_oblique_macroman/luximri-webfont.svg#luxi_monooblique') format('svg');
+    font-weight: normal;
+    font-style: italic, oblique;
+
+	}
+
+	@font-face {
+    font-family: 'LuxiMono';
+    src: url('fonts/luximono_boldoblique_macroman/luximbi-webfont.eot');
+    src: url('fonts/luximono_boldoblique_macroman/luximbi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/luximono_boldoblique_macroman/luximbi-webfont.woff') format('woff'),
+         url('fonts/luximono_boldoblique_macroman/luximbi-webfont.ttf') format('truetype'),
+         url('fonts/luximono_boldoblique_macroman/luximbi-webfont.svg#luxi_monobold_oblique') format('svg');
+    font-weight: bold;
+    font-style: italic, oblique;
+
+	}
+*/

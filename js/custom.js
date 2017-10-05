@@ -175,9 +175,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						this.setShape(hoveredShape);
 						console.log(this.id);
 						var targetStory = document.getElementById(id);
-						var targetHeadline = 'Stories/'+(this.id)+'.html #headline2';
-						var targetHeadlineSource = 'Stories/'+(this.id)+'.html #headlineSource2';
-						var targetHeadlineSummary = 'Stories/'+(this.id)+'.html #headlineSummary2';
+						var targetHeadline = 'stories/'+(this.id)+'.html #headline2';
+						var targetHeadlineSource = 'stories/'+(this.id)+'.html #headlineSource2';
+						var targetHeadlineSummary = 'stories/'+(this.id)+'.html #headlineSummary2';
 						
 						console.log("hoverIntentIn is working" + " , " + targetStory + " , " + CSS);
 						targetStory.className = targetStory.className + " targetHovered " + CSS;
@@ -203,9 +203,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						this.setShape(normalShape);
 						console.log(this.id);
 						var targetStory = document.getElementById(id);
-						var targetHeadline = 'Stories/'+(this.id)+'.html #headline2';
-						var targetHeadlineSource = 'Stories/'+(this.id)+'.html #headlineSource2';
-						var targetHeadlineSummary = 'Stories/'+(this.id)+'.html #headlineSummary2';
+						var targetHeadline = 'stories/'+(this.id)+'.html #headline2';
+						var targetHeadlineSource = 'stories/'+(this.id)+'.html #headlineSource2';
+						var targetHeadlineSummary = 'stories/'+(this.id)+'.html #headlineSummary2';
 						
 						console.log("hoverIntentOut is working" + " , " + targetStory + " , " + CSS);
 						targetStory.className = "";
@@ -227,16 +227,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						document.getElementById(timeline).click();
 						
 						var targetStory2 = document.getElementById(id);
-						var targetStory = 'Stories/'+id+'.html #story'; 
-						var targetHeadline = 'Stories/'+id+'.html #headline2';
-						var targetHeadlineSource = 'Stories/'+id+'.html #headlineSource2';
-						var targetHeadlineSummary = 'Stories/'+id+'.html #headlineSummary2';
-						var targetMedia = 'Stories/'+id+'.html #media';
+						var targetStory = 'stories/'+id+'.html #story'; 
+						var targetHeadline = 'stories/'+id+'.html #headline2';
+						var targetHeadlineSource = 'stories/'+id+'.html #headlineSource2';
+						var targetHeadlineSummary = 'stories/'+id+'.html #headlineSummary2';
+						var targetMedia = 'stories/'+id+'.html #media';
 						
 						var headlineCSS = $('#mainContentWrapper').attr('alt');
 						var mediaCSS = $('#mainContentWrapper').attr('alt');
 						var storyCSS = $('#mainContentWrapper').attr('alt');
-						var docLatLng = 'Stories/'+id+'.html #mapsLocation';
+						var docLatLng = 'stories/'+id+'.html #mapsLocation';
 						
 						$('#mapsStorage').load(docLatLng);
 						$('#mapsTitleStorage').load(targetHeadline);
@@ -594,9 +594,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			$(".storyTarget").hoverIntent(targetIntentIn, targetIntentOut);
 			
 				function targetIntentIn(){
-					var targetHeadline = 'Stories/'+$(this).attr('id')+'.html #headline2';
-					var targetHeadlineSource = 'Stories/'+$(this).attr('id')+'.html #headlineSource2';
-					var targetHeadlineSummary = 'Stories/'+$(this).attr('id')+'.html #headlineSummary2';
+					var targetHeadline = 'stories/'+$(this).attr('id')+'.html #headline2';
+					var targetHeadlineSource = 'stories/'+$(this).attr('id')+'.html #headlineSource2';
+					var targetHeadlineSummary = 'stories/'+$(this).attr('id')+'.html #headlineSummary2';
 					var CSS = $(this).attr('alt');
 				
 					
@@ -612,9 +612,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					$('#headlineWrapper.cover').removeClass('settled');			
 					}
 				function targetIntentOut(){
-					var targetHeadline = 'Stories/'+$(this).attr('id')+'.html #headline2';
-					var targetHeadlineSource = 'Stories/'+$(this).attr('id')+'.html #headlineSource2';
-					var targetHeadlineSummary = 'Stories/'+$(this).attr('id')+'.html #headlineSummary2';
+					var targetHeadline = 'stories/'+$(this).attr('id')+'.html #headline2';
+					var targetHeadlineSource = 'stories/'+$(this).attr('id')+'.html #headlineSource2';
+					var targetHeadlineSummary = 'stories/'+$(this).attr('id')+'.html #headlineSummary2';
 					var CSS = $(this).attr('alt');
 					console.log("hoverIntentOut is working");
 					$(this).removeClass('targetHovered');
@@ -633,16 +633,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		 document.getElementById
 			$(".storyTarget").click(function storyClick(){      
 				var targetStoryId = $(this).attr('id');
-				var targetStory = 'Stories/'+$(this).attr('id')+'.html #story'; 
-				var targetHeadline = 'Stories/'+$(this).attr('id')+'.html #headline2';
-				var targetHeadlineSource = 'Stories/'+$(this).attr('id')+'.html #headlineSource2';
-				var targetHeadlineSummary = 'Stories/'+$(this).attr('id')+'.html #headlineSummary2';
-				var targetMedia = 'Stories/'+$(this).attr('id')+'.html #media';
+				var targetStory = 'stories/'+$(this).attr('id')+'.html #story'; 
+				var targetHeadline = 'stories/'+$(this).attr('id')+'.html #headline2';
+				var targetHeadlineSource = 'stories/'+$(this).attr('id')+'.html #headlineSource2';
+				var targetHeadlineSummary = 'stories/'+$(this).attr('id')+'.html #headlineSummary2';
+				var targetMedia = 'stories/'+$(this).attr('id')+'.html #media';
 				var CSS = $(this).attr('alt');
 				var headlineCSS = $('#mainContentWrapper').attr('alt');
 				var mediaCSS = $('#mainContentWrapper').attr('alt');
 				var storyCSS = $('#mainContentWrapper').attr('alt');
-				var docLatLng = 'Stories/'+$(this).attr('id')+'.html #mapsLocation';
+				var docLatLng = 'stories/'+$(this).attr('id')+'.html #mapsLocation';
 				
 				$('#mapsStorage').load(docLatLng);
 				$('#mapsTitleStorage').load(targetHeadline);

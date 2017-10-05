@@ -146,7 +146,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					for (var i = 0; i < locations.length; i++) {
 						var ALL = locations[i];
 						var normalImage = {
-							url: "Images/" + ALL[4]	+ "Marker.png"					
+							url: "images/" + ALL[4]	+ "Marker.png"					
 						 };
 						var LatLng = new google.maps.LatLng(ALL[1], ALL[2]);	
 						var marker  = new google.maps.Marker({
@@ -166,10 +166,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						var CSS = (this.state)
 						var id = (this.id)
 						var normalImage = {
-							url: "Images/" + CSS + "Marker.png"					
+							url: "images/" + CSS + "Marker.png"					
 						 };
 						var hoveredImage = {
-							url: "Images/" + CSS + "BigMarker.png"					
+							url: "images/" + CSS + "BigMarker.png"					
 						 };
 						this.setIcon(hoveredImage);
 						this.setShape(hoveredShape);
@@ -194,10 +194,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						var CSS = (this.state)
 						var id = (this.id)
 						var normalImage = {
-							url: "Images/" + CSS + "Marker.png"					
+							url: "images/" + CSS + "Marker.png"					
 						 };
 						var hoveredImage = {
-							url: "Images/" + CSS + "BigMarker.png"					
+							url: "images/" + CSS + "BigMarker.png"					
 						 };
 						this.setIcon(normalImage);
 						this.setShape(normalShape);

@@ -557,20 +557,20 @@ body {
 					}	
 				
 					.CA .storyTargetWrapper {
-						background: url('../Images/Timebox/backgroundCA.png');
+						background: url('../images/Timebox/backgroundCA.png');
 					}
 						.CA .fillerSpace {
-							background: url('../Images/Timebox/fillerCA.png');
+							background: url('../images/Timebox/fillerCA.png');
 						}
 						.CA targetActive {
 							color: #ffd900;							
 						}
 						
 					.TX .storyTargetWrapper {
-						background: url('../Images/Timebox/backgroundTX.png');
+						background: url('../images/Timebox/backgroundTX.png');
 					}
 						.TX .fillerSpace {
-							background: url('../Images/Timebox/fillerTX.png');
+							background: url('../images/Timebox/fillerTX.png');
 						}
 						.TX targetActive {
 							color: #6bb38f;
@@ -578,20 +578,20 @@ body {
 							
 					
 					.NY .storyTargetWrapper {
-						background: url('../Images/Timebox/backgroundNY.png');
+						background: url('../images/Timebox/backgroundNY.png');
 					}
 						.NY .fillerSpace {
-							background: url('../Images/Timebox/fillerNY.png');
+							background: url('../images/Timebox/fillerNY.png');
 						}
 						.NY targetActive {
 							color: #2d6180;
 						}
 					
 					.REF .storyTargetWrapper {
-						background: url('../Images/Timebox/backgroundREF.png');
+						background: url('../images/Timebox/backgroundREF.png');
 					}
 						.REF .fillerSpace {
-							background: url('../Images/Timebox/fillerREF.png');
+							background: url('../images/Timebox/fillerREF.png');
 						}
 						.REF targetActive {
 							color: #7a914b;

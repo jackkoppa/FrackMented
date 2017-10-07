@@ -173,13 +173,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						 };
 						this.setIcon(hoveredImage);
 						this.setShape(hoveredShape);
-						console.log(this.id);
+						//console.log(this.id);
 						var targetStory = document.getElementById(id);
 						var targetHeadline = 'stories/'+(this.id)+'.html #headline2';
 						var targetHeadlineSource = 'stories/'+(this.id)+'.html #headlineSource2';
 						var targetHeadlineSummary = 'stories/'+(this.id)+'.html #headlineSummary2';
 						
-						console.log("hoverIntentIn is working" + " , " + targetStory + " , " + CSS);
+						//console.log("hoverIntentIn is working" + " , " + targetStory + " , " + CSS);
 						targetStory.className = targetStory.className + " targetHovered " + CSS;
 						$('#headlineWrapper.cover').removeClass('settled');
 						$('#headlineWrapper.cover').addClass('launched');
@@ -188,7 +188,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						$('#headlineSummary.cover').load(targetHeadlineSummary);
 						$('#headlineWrapper.cover').addClass(CSS);
 						$('#headlineWrapper.cover').removeClass('settled');
-						console.log($('#headlineWrapper.cover').attr('class'));
+						//console.log($('#headlineWrapper.cover').attr('class'));
 					});
 					google.maps.event.addListener(marker, 'mouseout', function() {
 						var CSS = (this.state)
@@ -201,13 +201,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						 };
 						this.setIcon(normalImage);
 						this.setShape(normalShape);
-						console.log(this.id);
+						//console.log(this.id);
 						var targetStory = document.getElementById(id);
 						var targetHeadline = 'stories/'+(this.id)+'.html #headline2';
 						var targetHeadlineSource = 'stories/'+(this.id)+'.html #headlineSource2';
 						var targetHeadlineSummary = 'stories/'+(this.id)+'.html #headlineSummary2';
 						
-						console.log("hoverIntentOut is working" + " , " + targetStory + " , " + CSS);
+						//console.log("hoverIntentOut is working" + " , " + targetStory + " , " + CSS);
 						targetStory.className = "";
 						targetStory.className = "storyTarget";
 						$('#headlineWrapper.cover').removeClass('launched');
@@ -216,14 +216,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							$('#headlineWrapper.cover').removeClass(CSS);
 							}, 1000
 							);
-						console.log($('#headlineWrapper.cover').attr('class'));
+						//console.log($('#headlineWrapper.cover').attr('class'));
 					});	
 					
 					google.maps.event.addListener(marker, 'click', function() {
 						var CSS = (this.state);
 						var id = (this.id);
 						var timeline = CSS + "Indiv"	
-						console.log("timeline: " + timeline);
+						//console.log("timeline: " + timeline);
 						document.getElementById(timeline).click();
 						
 						var targetStory2 = document.getElementById(id);
@@ -241,10 +241,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 						$('#mapsStorage').load(docLatLng);
 						$('#mapsTitleStorage').load(targetHeadline);
 						 setTimeout(function() {
-							console.log($('#mapsStorage').html());
+							//console.log($('#mapsStorage').html());
 						var pulledLatLng = $('#mapsLocation').html();
 						var pulledHeadline = $('#headline2').html();
-						console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
+						//console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
 						var b=pulledLatLng.split(",");
 						var finalLatLng = new google.maps.LatLng(parseFloat(b[0]), parseFloat(b[1]));		
 						
@@ -280,7 +280,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							);
 							
 						setTimeout(function() {
-							console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
+							//console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
 							$('#headline').load(targetHeadline);
 							$('#headlineSource').load(targetHeadlineSource);
 							$('#headlineSummary').load(targetHeadlineSummary);
@@ -356,7 +356,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							
 						setTimeout(function(){
 							$('#storyWrapper').removeClass('shifted');
-							console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
+							//console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
 							
 							$('#mainContentWrapper').attr('alt',CSS);
 								
@@ -384,7 +384,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							/*$('.jspVerticalBar').removeClass(headlineCSS);
 							$('#mainContentWrapper').attr('alt',CSS);
 							$('.jspVerticalBar').addClass(CSS);*/
-							console.log(api);
+							//console.log(api);
 										
 						}, 3000
 							);
@@ -402,7 +402,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		/*Center Map on Appropriate State*/
 			$('.timelineIndiv.CA').click(function centerTX() {
 				var texasClass = $('.timelineIndiv.CA').attr('class')
-				console.log(texasClass);
+				//console.log(texasClass);
 				if (texasClass.indexOf('pos1') > -1) {
 				var centerTexas = new google.maps.LatLng(37.282795,-120.589371);
 				map.setCenter(centerTexas);
@@ -410,14 +410,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				}
 				
 				else {
-				console.log('Didnt do anything');
+				//console.log('Didnt do anything');
 				}
 			  }); 
 			
 		  	
 			$('.timelineIndiv.TX').click(function centerTX() {
 				var texasClass = $('.timelineIndiv.TX').attr('class')
-				console.log(texasClass);
+				//console.log(texasClass);
 				if (texasClass.indexOf('pos2') > -1) {
 				var centerTexas = new google.maps.LatLng(31.578535,-99.319839);
 				map.setCenter(centerTexas);
@@ -431,13 +431,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				map.setZoom(5);				
 				}
 					else{
-					console.log('Didnt do anything');
+					//console.log('Didnt do anything');
 				}}
 			  }); 
 			
 			$('.timelineIndiv.NY').click(function centerTX() {
 				var texasClass = $('.timelineIndiv.NY').attr('class')
-				console.log(texasClass);
+				//console.log(texasClass);
 				if (texasClass.indexOf('pos2') > -1) {
 				var centerTexas = new google.maps.LatLng(43.092961,-76.086674);
 				map.setCenter(centerTexas);
@@ -451,13 +451,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				map.setZoom(6);				
 				}
 					else{
-					console.log('Didnt do anything');
+					//console.log('Didnt do anything');
 				}}
 			  }); 
 			  
 			  $('.timelineIndiv.REF').click(function centerTX() {
 				var texasClass = $('.timelineIndiv.REF').attr('class')
-				console.log(texasClass);
+				//console.log(texasClass);
 				if (texasClass.indexOf('pos3') > -1) {
 				var centerTexas = new google.maps.LatLng(39.232253,-98.978577);
 				map.setCenter(centerTexas);
@@ -471,7 +471,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				map.setZoom(3);				
 				}
 					else{
-					console.log('Didnt do anything');
+					//console.log('Didnt do anything');
 				}}
 			  });
 
@@ -600,7 +600,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					var CSS = $(this).attr('alt');
 				
 					
-					console.log("hoverIntentIn is working");
+					//console.log("hoverIntentIn is working");
 					$(this).addClass('targetHovered');
 					$(this).addClass(CSS);
 					$('#headlineWrapper.cover').removeClass('settled');
@@ -616,7 +616,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					var targetHeadlineSource = 'stories/'+$(this).attr('id')+'.html #headlineSource2';
 					var targetHeadlineSummary = 'stories/'+$(this).attr('id')+'.html #headlineSummary2';
 					var CSS = $(this).attr('alt');
-					console.log("hoverIntentOut is working");
+					//console.log("hoverIntentOut is working");
 					$(this).removeClass('targetHovered');
 					$(this).removeClass(CSS);
 					
@@ -647,10 +647,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				$('#mapsStorage').load(docLatLng);
 				$('#mapsTitleStorage').load(targetHeadline);
 				 setTimeout(function() {
-					console.log($('#mapsStorage').html());
+					//console.log($('#mapsStorage').html());
 				var pulledLatLng = $('#mapsLocation').html();
 				var pulledHeadline = $('#headline2').html();
-				console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
+				//console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
 				var b=pulledLatLng.split(",");
 				var finalLatLng = new google.maps.LatLng(parseFloat(b[0]), parseFloat(b[1]));		
 				
@@ -681,7 +681,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					);
 		
 				setTimeout(function() {
-					console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
+					//console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
 					$('#headline').load(targetHeadline);
 					$('#headlineSource').load(targetHeadlineSource);
 					$('#headlineSummary').load(targetHeadlineSummary);
@@ -757,7 +757,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					
 				setTimeout(function(){
 					$('#storyWrapper').removeClass('shifted');
-					console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
+					//console.log("headlineCSS:" + headlineCSS + ", CSS: " + CSS + ", mainContentWrapper title: " + $('#mainContentWrapper').attr('title'));
 					$('.storyTarget').hoverIntent(targetIntentIn, targetIntentOut);
 					$('#mainContentWrapper').attr('alt',CSS);
 						
@@ -785,7 +785,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					/*$('.jspVerticalBar').removeClass(headlineCSS);
 					$('#mainContentWrapper').attr('alt',CSS);
 					$('.jspVerticalBar').addClass(CSS);*/
-					console.log(api);
+					//console.log(api);
 								
 				}, 3000
 					);
@@ -875,7 +875,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 $(document).ready(function(){
 	$('.CA+.floater').hoverIntent(caIn, caOut)
 	function caIn(){
-		console.log("HoverIntent started");
+		//console.log("HoverIntent started");
 		$('.CA+.floater+.shroud').addClass('hovered');
 	}
 	function caOut(){
@@ -884,7 +884,7 @@ $(document).ready(function(){
 	
 	$('.TX+.floater').hoverIntent(txIn, txOut)
 	function txIn(){
-		console.log("HoverIntent started");
+		//console.log("HoverIntent started");
 		$('.TX+.floater+.shroud').addClass('hovered');
 	}
 	function txOut(){
@@ -893,7 +893,7 @@ $(document).ready(function(){
 	
 	$('.NY+.floater').hoverIntent(nyIn, nyOut)
 	function nyIn(){
-		console.log("HoverIntent started");
+		//console.log("HoverIntent started");
 		$('.NY+.floater+.shroud').addClass('hovered');
 	}
 	function nyOut(){
@@ -902,7 +902,7 @@ $(document).ready(function(){
 	
 	$('.REF+.floater').hoverIntent(refIn, refOut)
 	function refIn(){
-		console.log("HoverIntent started");
+		//console.log("HoverIntent started");
 		$('.REF+.floater+.shroud').addClass('hovered');
 	}
 	function refOut(){
@@ -922,7 +922,7 @@ $(document).ready(function(){
 		pane.jScrollPane(settings);
 		var api = pane.data('jsp');
 		
-		console.log(api);
+		//console.log(api);
 		
 					var throttleTimeout;
 					$(window).bind(
@@ -962,7 +962,7 @@ $(document).ready(function(){
 		pane.jScrollPane(settings);
 		var api = pane.data('jsp');
 		
-		console.log(api);
+		//console.log(api);
 		
 					var throttleTimeout;
 					$(window).bind(
@@ -1002,7 +1002,7 @@ $(document).ready(function(){
 		pane.jScrollPane(settings);
 		var api = pane.data('jsp');
 		
-		console.log(api);
+		//console.log(api);
 		
 					var throttleTimeout;
 					$(window).bind(
@@ -1044,7 +1044,7 @@ $(document).ready(function(){
 		pane.jScrollPane(settings);
 		var api = pane.data('jsp');
 		
-		console.log(api);
+		//console.log(api);
 		
 					var throttleTimeout;
 					$(window).bind(
@@ -1083,7 +1083,7 @@ $(document).ready(function(){
 		var correctTimeline = ".timelineIndiv" + "." + id;
 		localStorage.setItem("correctPreset", ".timelineIndiv" + "." + id);
 		$(correctTimeline).trigger("click");
-		console.log("Texas class: " + $('.timelineIndiv.TX').attr('class'));
+		//console.log("Texas class: " + $('.timelineIndiv.TX').attr('class'));
 		
 		$('#tokenWrapper div, .landing, .floater, .shroud').animate({
 			opacity: 0,

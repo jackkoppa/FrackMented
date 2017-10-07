@@ -13,3 +13,5 @@ http-server
 Project is now available at localhost:8080
 
 *Note: any basic http server should work as well as the above npm package, since the project is a static site that performs simple Ajax load requests*
+
+Available on GitHub Pages: https://jackkoppa.github.io/FrackMented/

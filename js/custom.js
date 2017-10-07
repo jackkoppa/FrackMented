@@ -621,16 +621,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					$(this).removeClass(CSS);
 					
 					$('#headlineWrapper.cover').removeClass('launched');
-					 setTimeout(function settleFunction() {
-					$('#headlineWrapper.cover').addClass('settled');
-					$('#headlineWrapper.cover').removeClass(CSS);
-				}, 1000
-					);
-					
-					}
-					
-			
-		 document.getElementById
+					setTimeout(function settleFunction() {
+						$('#headlineWrapper.cover').addClass('settled');
+						$('#headlineWrapper.cover').removeClass(CSS);
+					}, 1000);					
+				}
 			$(".storyTarget").click(function storyClick(){      
 				var targetStoryId = $(this).attr('id');
 				var targetStory = 'stories/'+$(this).attr('id')+'.html #story'; 
@@ -646,18 +641,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				
 				$('#mapsStorage').load(docLatLng);
 				$('#mapsTitleStorage').load(targetHeadline);
-				 setTimeout(function() {
+				setTimeout(function() {
 					//console.log($('#mapsStorage').html());
-				var pulledLatLng = $('#mapsLocation').html();
-				var pulledHeadline = $('#headline2').html();
-				//console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
-				var b=pulledLatLng.split(",");
-				var finalLatLng = new google.maps.LatLng(parseFloat(b[0]), parseFloat(b[1]));		
-				
-				map.setCenter(finalLatLng);
-				
-				}, 0
-					);
+					var pulledLatLng = $('#mapsLocation').html();
+					var pulledHeadline = $('#headline2').html();
+					console.log(pulledLatLng + ", pulledHeadline: " + pulledHeadline);		
+					var b=pulledLatLng.split(",");
+					var finalLatLng = new google.maps.LatLng(parseFloat(b[0]), parseFloat(b[1]));		
+					
+					map.setCenter(finalLatLng);
+				}, 100);
 				
 				
 						
